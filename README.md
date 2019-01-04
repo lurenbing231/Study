@@ -29,7 +29,7 @@
 ## Java初始化
 
 Java通过构造器确保每个对象都被初始化，构造器采用与类相同的名称。
-class Car {
+```class Car {
    Car() {//无参构造器（默认构造器）
        System.out.println("Car");
    }
@@ -38,16 +38,17 @@ class Car {
        System.out.println("CarName:" + name);
    }
 }
+```
 对于无参构造器在创建对象时：
-Car car = new Car();
+```Car car = new Car();```
 对于有形式参数的构造器，创建对象时：
-Car car = new Car("BMW");
+```Car car = new Car("BMW");```
 当Car(String)是Car类中唯一的构造器时，编译器将不会允许以其他任何方式创建Car对象-----Java编程思想（第四版）
 如果类中没有构造器，编译器会自动创建一个默认构造区。但是如果定义了一个构造器（无论是否有参数），编译器都不会自动创建默认构造器。
 构造器是没有返回值的，new表达式返回了对新建对象的引用，但构造器本身是没有任何返回值。
 在Java中，可以用多种方式创建一个类，就像上面的代码一样，这里用到了方法重载，其规则是：每一个重载的方法必须都有一个独一无二的参数类型列表（其中无参和参数类型顺序也算）
 对于基本类型能从一个“小”的类型自动提升至“大”的类型，在重载中也成立，下面是基本类型在重载中的情况。
-public class Overload {//《Java编程思想》的例子
+```public class Overload {//《Java编程思想》的例子
     void z1(char x) { System.out.print("z1(char) "); }
     void z1(byte x) { System.out.print("z1(byte) "); }
     void z1(short x) { System.out.print("z1(short) "); }
@@ -95,6 +96,7 @@ public class Overload {//《Java编程思想》的例子
         z7(5);
     }
 }
+```
 其结果为：
  
 可以看出重载方法接受int型参数时，如果不存在int型形式参数类型时，实际数据类型会被提升。因此，各个类型的提升顺序为：
@@ -103,13 +105,16 @@ byte类型：byte -> short -> int -> long -> float -> double
 其他基本类型在提升时根据上面的顺序一样。
 this关键字
 this关键字只能在方法内部使用，即在方法内部得到当前对象的引用。
+```
 class Car {
     Car getCar() {
         return this;
     }
 }
+```
 返回Car对象的引用。
 当一个类中存在多个构造器，并且想一个构造器调用另一个构造器时，this关键字可以发挥作用。在构造器中，如果this方法添加了参数列表，则是对符合此参数列表的某个构造器的明确调用。
+```
 class Car {
    Car() {
         this("BMW");//调用构造器Car(String name)
@@ -119,17 +124,21 @@ class Car {
         System.out.println("CarName:" + name);
    }
 }
+```
 虽然可以调用其他构造器，但是不能同时调用两个，且this调用构造器必须在最起始的位置。
 初始化
 在Java中，编译器会尽可能保证所有变量在使用前都能得到恰当的初始化。
 对于方法的局部变量来说，为保证初始化，对于使用时未初始化的变量，编译器会提示错误。
+```
 void z() {
    int i;
    i++;//Variable 'i' might not have been initialized
 }
+```
 因此，对于局部变量来说，在使用前必须明确进行初始化。
 
 对于类的数据成员（即字段）来说，编译器会对每一个数据成员提供一个初始值（自动进行初始化）。
+```
 public class InitialValues {
    boolean t;
    char c;
@@ -153,6 +162,7 @@ public class InitialValues {
       System.out.println("initialValues: " + initialValues);
    }
 }
+```
 结果如下图所示
  
 对于基本数据类型编译器保证有一个初始值（char的初始值为0，ASCII码值为0，对应的的是空字符），对于引用数据类型，初始值为null。并且，无法阻止自动初始化的进行，所有对于 int i = 7; i首先被置为0，然后变成7，对于所有基本类型和对象引用，这种情况都是成立的。
@@ -161,12 +171,11 @@ public class InitialValues {
 
 初始化顺序为：静态数据成员初始化（仅第一次执行）、非静态数据成员初始化、构造器、其他方法。
 其中静态数据成员包括静态代码块
+```
 class Car {
    static String name;
    static {
         name = "BMW";
    }
 }
-
-
-
+```
