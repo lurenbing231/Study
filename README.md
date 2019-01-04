@@ -1,5 +1,5 @@
 # 个人学习使用
-| [编程思想](#编程思想) | [Effective Java](#Effective Java)|
+| [编程思想](#编程思想) | [Effective Java](#Effective-Java)|
 
 
 
@@ -15,13 +15,13 @@
 
 
 ### 编程思想
-    * [Java初始化](#Java初始化)
-    * [Java类的复用](#Java类的复用)
-    * [Java向上转型及final关键字](#Java向上转型及final关键字)
-    * [抽象类和接口](#抽象类和接口)
-    * [多态](#多态)
-    * [内部类](#内部类)
-    * [容器](#容器)
+   * [Java初始化](#Java初始化)
+   * [Java类的复用](#Java类的复用)
+   * [Java向上转型及final关键字](#Java向上转型及final关键字)
+   * [抽象类和接口](#抽象类和接口)
+   * [多态](#多态)
+   * [内部类](#内部类)
+   * [容器](#容器)
 
 ### Effective Java
 
