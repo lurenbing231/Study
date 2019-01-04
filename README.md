@@ -87,9 +87,9 @@ public class Overload {//《Java编程思想》的例子
 }
 ```
 其结果为：
-<div
+<div>
  <img src="图片/Java/初始化1.webp" align="center">
-</div
+</div>
  
 可以看出重载方法接受int型参数时，如果不存在int型形式参数类型时，实际数据类型会被提升。因此，各个类型的提升顺序为：
 char类型：char -> int -> long -> float -> double
