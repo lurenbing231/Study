@@ -1,19 +1,6 @@
 # 个人学习使用
 | [编程思想](#编程思想) | [Effective Java](#Effective-Java)|
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 编程思想
    * [Java初始化](#Java初始化)
    * [Java类的复用](#Java类的复用)
@@ -29,7 +16,8 @@
 ## Java初始化
 
 Java通过构造器确保每个对象都被初始化，构造器采用与类相同的名称。
-```class Car {
+```
+class Car {
    Car() {//无参构造器（默认构造器）
        System.out.println("Car");
    }
@@ -48,7 +36,8 @@ Java通过构造器确保每个对象都被初始化，构造器采用与类相�
 构造器是没有返回值的，new表达式返回了对新建对象的引用，但构造器本身是没有任何返回值。
 在Java中，可以用多种方式创建一个类，就像上面的代码一样，这里用到了方法重载，其规则是：每一个重载的方法必须都有一个独一无二的参数类型列表（其中无参和参数类型顺序也算）
 对于基本类型能从一个“小”的类型自动提升至“大”的类型，在重载中也成立，下面是基本类型在重载中的情况。
-```public class Overload {//《Java编程思想》的例子
+```
+public class Overload {//《Java编程思想》的例子
     void z1(char x) { System.out.print("z1(char) "); }
     void z1(byte x) { System.out.print("z1(byte) "); }
     void z1(short x) { System.out.print("z1(short) "); }
