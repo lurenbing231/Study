@@ -87,8 +87,8 @@ public class Overload {//《Java编程思想》的例子
 }
 ```
 其结果为：
-<div>
- <img src="图片/Java/初始化1.webp" align="center">
+<div align="center">
+ <img src="图片/Java/初始化1.webp">
 </div>
  
 可以看出重载方法接受int型参数时，如果不存在int型形式参数类型时，实际数据类型会被提升。因此，各个类型的提升顺序为：
@@ -156,7 +156,9 @@ public class InitialValues {
 }
 ```
 结果如下图所示
- 
+ <div align="center">
+ <img src="图片/Java/初始化2.png">
+</div>
 对于基本数据类型编译器保证有一个初始值（char的初始值为0，ASCII码值为0，对应的的是空字符），对于引用数据类型，初始值为null。并且，无法阻止自动初始化的进行，所有对于 int i = 7; i首先被置为0，然后变成7，对于所有基本类型和对象引用，这种情况都是成立的。
 初始化顺序
 对于静态数据，无论创建多少个对象，静态数据都只占用一份存储区域。
