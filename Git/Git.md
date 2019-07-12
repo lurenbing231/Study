@@ -6,6 +6,7 @@
        * [本地创建版本库](#本地创建版本库)
 	   * [Git的三个存储空间](#Git的三个存储空间)
 	   * [提交修改文件命令](#提交修改文件命令)
+	   * [版本回退](#版本回退)
    
    ## 一、安装及配置
    ### Git安装
@@ -68,5 +69,36 @@
    </div>
    文件提交到当前分支后，文件状态为
    <div align="center">
-   <img src="../图片/Git/提交修改文件命令图片3.png">
+   <img src="../图片/Git/提交修改文件命令图片3.png>
+   </div>
+   
+   ### 版本回退
+   使用git log命令查看已经提交的版本
+   <div align="center">
+   <img src="../图片/Git/版本回退图片1.png">
+   </div>
+   用git log --pretty=oneline可以查看的更清晰
+   <div align="center">
+   <img src="../图片/Git/版本回退图片2.png">
+   </div>
+   其中，十六进制码为版本id，用于切换到指定版本。
+   
+   如果要回退到上一个版本，可以使用以下命令。
+   ```
+   git reset --hard HEAD^
+   git reset --hard HEAD~1
+   ```
+   可以看到，当前版本已经是上一个版本了
+   <div align="center">
+   <img src="../图片/Git/版本回退图片3.png">
+   </div>
+   <div align="center">
+   <img src="../图片/Git/版本回退图片4.png">
+   </div>
+   如果还想回到第二次修改的版本，可以使用以下命令。
+   ```
+   git reset --hard 版本id
+   ```
+   <div align="center">
+   <img src="../图片/Git/版本回退图片5.png">
    </div>
