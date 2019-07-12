@@ -69,7 +69,7 @@
    </div>
    文件提交到当前分支后，文件状态为
    <div align="center">
-   <img src="../图片/Git/提交修改文件命令图片3.png>
+   <img src="../图片/Git/提交修改文件命令图片3.png">
    </div>
    
    ### 版本回退
