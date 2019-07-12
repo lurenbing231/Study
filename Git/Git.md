@@ -147,6 +147,7 @@
    <img src="../图片/Git/创建与合并图片2.png">
    </div>
    合并分支及删除分支
+   
    ```
    git merge [name]     //把name分支合并到当前分支
    git branch -d [name] //删除name分支
