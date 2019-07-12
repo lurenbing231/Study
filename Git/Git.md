@@ -11,6 +11,7 @@
    * [三、分支管理](#三分支管理)
        * [创建与合并](#创建与合并)
 	   * [解决冲突](#解决冲突)
+	   * [stash命令](#stash命令)
    
    ## 一、安装及配置
    ### Git安装
@@ -172,4 +173,27 @@
    进入文件解决冲突后再重新提交
    <div align="center">
    <img src="../图片/Git/解决冲突图片4.png">
+   </div>
+   
+   ### stash命令
+   当出现一个紧急bug，当前开发的功能又不想动时，可以把当前开发的功能用stash暂时挂起，然后新建一个分支来修复bug
+   <div align="center">
+   <img src="../图片/Git/stash命令图片1.png">
+   </div>
+   使用以下命令，可以看现在暂时挂起的版本
+   ```
+   git stash list
+   ```
+   <div align="center">
+   <img src="../图片/Git/stash命令图片2.png">
+   </div>
+   然后用以下命令还原挂起的版本
+   ```
+   git stash apply  //恢复最近挂起的版本，但不删除列表中版本
+   git stash drop   //删除最近的版本
+   git stash pop    //恢复最近的版本并删除该版本
+   git stash apply stash@{0}  //指定id为0的版本恢复
+   ```
+   <div align="center">
+   <img src="../图片/Git/stash命令图片3.png">
    </div>
