@@ -10,6 +10,7 @@
 	   * [撤销修改（未提交到分支中）](#撤销修改)
    * [三、分支管理](#三分支管理)
        * [创建与合并](#创建与合并)
+	   * [解决冲突](#解决冲突)
    
    ## 一、安装及配置
    ### Git安装
@@ -147,11 +148,28 @@
    <img src="../图片/Git/创建与合并图片2.png">
    </div>
    合并分支及删除分支
-   
    ```
    git merge [name]     //把name分支合并到当前分支
    git branch -d [name] //删除name分支
    ```
    <div align="center">
    <img src="../图片/Git/创建与合并图片3.png">
+   </div>
+   
+   ### 解决冲突
+   首先dev从master拉出分支，dev和master都对文件进行了修改，这时把dev分支合并到master中，会出现冲突
+   <div align="center">
+   <img src="../图片/Git/解决冲突图片1.png">
+   </div>
+   使用git status命令可以查看冲突文件
+   <div align="center">
+   <img src="../图片/Git/解决冲突图片2.png">
+   </div>
+   进入文件可以看到以下冲突
+   <div align="center">
+   <img src="../图片/Git/解决冲突图片3.png">
+   </div>
+   进入文件解决冲突后再重新提交
+   <div align="center">
+   <img src="../图片/Git/解决冲突图片4.png">
    </div>
