@@ -181,13 +181,16 @@
    <img src="../图片/Git/stash命令图片1.png">
    </div>
    使用以下命令，可以看现在暂时挂起的版本
+   
    ```
    git stash list
    ```
+   
    <div align="center">
    <img src="../图片/Git/stash命令图片2.png">
    </div>
    然后用以下命令还原挂起的版本
+   
    ```
    git stash apply  //恢复最近挂起的版本，但不删除列表中版本
    git stash drop   //删除最近的版本
