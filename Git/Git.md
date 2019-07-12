@@ -8,6 +8,8 @@
 	   * [提交修改文件命令](#提交修改文件命令)
 	   * [版本回退](#版本回退)
 	   * [撤销修改（未提交到分支中）](#撤销修改)
+   * [三、分支管理](#三分支管理)
+       * [创建与合并](#创建与合并)
    
    ## 一、安装及配置
    ### Git安装
@@ -127,3 +129,28 @@
    <img src="../图片/Git/撤销修改图片4.png">
    </div>
    如果文件被提交到分支上（commit了），就要用版本回退了
+   
+   ## 三、分支管理
+   ### 创建与合并
+   首先用以下命令创建、查看分支
+   ```
+   git checkout -b [name] //创建并切换分支
+   git branch             //查看分支
+   git branch [name]      //创建分支
+   git checkout [name]    //切换分支
+   ```
+   其中星号表示当前所在的分支
+   <div align="center">
+   <img src="../图片/Git/创建与合并图片1.png">
+   </div>
+   <div align="center">
+   <img src="../图片/Git/创建与合并图片2.png">
+   </div>
+   合并分支及删除分支
+   ```
+   git merge [name]     //把name分支合并到当前分支
+   git branch -d [name] //删除name分支
+   ```
+   <div align="center">
+   <img src="../图片/Git/创建与合并图片3.png">
+   </div>
