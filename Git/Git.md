@@ -200,3 +200,6 @@
    <div align="center">
    <img src="../图片/Git/stash命令图片3.png">
    </div>
+   
+   ### revert命令（轻易不要使用）
+   结合log命令，单独删除某个或几个节点的更改，该节点前后修改保留
