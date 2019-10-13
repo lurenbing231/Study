@@ -1,5 +1,5 @@
 # 个人学习使用
-| [JAVA](#JAVA) | [Git](#Git) | [Spring Boot](#Spring Boot) |
+| [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) |
 
 ### JAVA
    #### [编程思想](Java/编程思想.md)
@@ -14,4 +14,4 @@
    入职之后的学习和总结（持续更新中）。
 
 ### Spring Boot
-   #### [Spring Boot](Spring Boot/Spring Boot.md)
+   #### [SpringBoot](SpringBoot/SpringBoot.md)
