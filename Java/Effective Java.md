@@ -11,7 +11,7 @@
 ### 消除过期的对象引用
 
 Java中存在过期饮用的概念，过期引用就是指永远不被解除的引用。例如一下代码（栈实现代码中，pop部分的代码）
-```
+```java
 public class Stack {
    private Object[] elements;
    private int size = 0;
@@ -40,7 +40,7 @@ java的垃圾回收机制：只要对象存在引用就不会被回收。这样�
 
 解决上面例子的问题方式为：
 
-```
+```java
    public Object pop() {
        if (size == 0) {
            throw new EnmptyStackException();
@@ -101,9 +101,38 @@ System.runFinalizedsOnExit和Runtime.runFinzlizersOnExit这两个方法虽然能
 
 存在一些对象的引用域允许为null，所以为了避免空指针异常，可以使用以下方式进行域比较：
 
-```
+```java
 (field == null ? o.field == null : field.equals(o.field))
 // 通常field和o.field是相同的对象引用，可以优化成以下形式
 (field == o.field || (field != null && field.equals(o.field)))
 ```
 
+### hashcode方法
+
+hashmap有一项优化：会将每个项相关联的散列码缓存起来，如果散列码不匹配，就不会校验对象的等同性。
+
+编写hashcode的方法：
+
+1、把某个非零的常数值，比如17，保存在一个名为result的int类型的变量中；
+
+2、对于对象中每个关键域f，完成以下步骤：
+
+​    a、为该域计算int类型散列码c：
+
+​        i、如果该域是boolean类型，则计算(f ? 1 : 0)；
+
+​        ii、如果该域是byte、char、short或者int类型，则计算(int)f；
+
+​        iii、如果该域是long类型，则计算(int)(f ^ (f >>> 32))；
+
+​        iv、如果该域是float类型，则计算Float.floatToIntBits(f)；
+
+​        v、如果该域是double类型，则计算Double.doubleToLongBits(f)，然后按照步骤2.a.ii，为得到的long类型值计算散列值；
+
+​        vi、如果该域是个数组，则把每一个元素当作单独的域来处理（递归的调用以上规则）。如果数组域中每个元素都很重要，可以使用Arrays.hashCode方法。
+
+​    b、按照下面的公式，把步骤2.a中计算得到的散列码c合并到result中：
+
+​        result = 31 * result + c;
+
+3、返回result
