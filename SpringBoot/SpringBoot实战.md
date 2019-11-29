@@ -8,7 +8,7 @@
  <img src="../图片/SpringBoot/Spring模块图.jpg">
 </div>
 
-#### Spring的生态
+### Spring的生态
 
 Spring Boot：使用默认开发配置来实现快速开发  
 
@@ -40,15 +40,15 @@ Spring LDAP：简化使用LDAP开发
 
 Spring Session：提供一个API及实现来管理用户会话消息  
 
-#### 项目构建工具Maven
+### 项目构建工具Maven
 
 Maven的项目中都存在一个pom.xml文件用来管理项目的依赖以及项目的编译等功能。  
 
-###### 1、dependencies元素
+##### 1、dependencies元素
 
 此元素中包含多个项目依赖需要使用的<dependency></dependency>  
 
-###### 2、dependency元素
+##### 2、dependency元素
 
 内部通过groupId、artifactId以及version来确定唯一的依赖  
 
@@ -58,7 +58,7 @@ artifactId：项目唯一标识
 
 version：版本唯一标识  
 
-###### 3、properties元素
+##### 3、properties元素
 
 用来定义变量  
 
