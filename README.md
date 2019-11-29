@@ -11,10 +11,11 @@
 #### [问题总结](Java/working.md)  
    工作中遇到的问题总结
 
-### [Git](Git/Git.md)  
+## [Git](Git/Git.md)  
+
    入职之后的学习和总结（持续更新中）。
 
-### [Spring Boot]  
+## [Spring Boot]  
 #### [SpringBoot实战](SpringBoot/SpringBoot实战.md)  
    根据《spring Boot 实战》阅读总结
 
