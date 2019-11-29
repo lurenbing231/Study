@@ -14,11 +14,11 @@
 	   * [stash命令](#stash命令)
 	   * [revert命令](#revert命令)
    
-## 一、安装及配置
-### Git安装
+## 一、安装及配置  
+### Git安装  
 Git从网上下载就行，我的电脑是win10，一路傻瓜式操作就安装完了。
    
-### Git用户名及邮箱配置
+### Git用户名及邮箱配置  
 用户名
 ```
  git config --global user.name "zhaoliang"
@@ -39,8 +39,8 @@ git config user.email
    <img src="../图片/Git/用户邮箱图片.png">
    </div>
    
-## 二、创建版本库及提交命令
-### 本地创建版本库
+## 二、创建版本库及提交命令  
+### 本地创建版本库  
    首先创建一个文件夹，Git进入该文件夹，然后使用以下命令将本文件夹作为Git仓库
    ```
    git init
@@ -50,7 +50,7 @@ git config user.email
    </div>
    会发现文件后面会有master标记，说明此文件夹现在是Git仓库。
    
-### Git的三个存储空间
+### Git的三个存储空间  
    工作区：个人修改文件，工作的区域
    暂存区：暂时存储个人修改的文件的区域
    当前分支：多人共享的区域，用来版本控制，项目迭代
@@ -59,7 +59,7 @@ git config user.email
    ```
    查看文件状态（工作区是否有修改的文件，暂存区是否有文件）
    
-### 提交修改文件命令
+### 提交修改文件命令  
    单一个文件进行修改后（创建、修改、删除都属于修改），将文件同步到当前分支中，需要使用以下命令。
    ```
    git add [filename] //将文件从工作区提交到暂存区中
@@ -78,7 +78,7 @@ git config user.email
    <img src="../图片/Git/提交修改文件命令图片3.png">
    </div>
    
-### 版本回退
+### 版本回退  
    使用git log命令查看已经提交的版本
    <div align="center">
    <img src="../图片/Git/版本回退图片1.png">
@@ -109,7 +109,7 @@ git config user.email
    <img src="../图片/Git/版本回退图片5.png">
    </div>
    
-### 撤销修改
+### 撤销修改  
    该方法适合修改的文件还没提交到分支中的情况。
    如果修改的文件还在工作区，还没有提交到暂存区，即是以下状态
    <div align="center">
@@ -133,8 +133,8 @@ git config user.email
    </div>
    如果文件被提交到分支上（commit了），就要用版本回退了
    
-## 三、分支管理
-### 创建与合并
+## 三、分支管理  
+### 创建与合并  
    首先用以下命令创建、查看分支
    ```
    git checkout -b [name] //创建并切换分支
@@ -158,7 +158,7 @@ git config user.email
    <img src="../图片/Git/创建与合并图片3.png">
    </div>
    
-### 解决冲突
+### 解决冲突  
    首先dev从master拉出分支，dev和master都对文件进行了修改，这时把dev分支合并到master中，会出现冲突
    <div align="center">
    <img src="../图片/Git/解决冲突图片1.png">
@@ -176,7 +176,7 @@ git config user.email
    <img src="../图片/Git/解决冲突图片4.png">
    </div>
    
-### stash命令
+### stash命令  
    当出现一个紧急bug，当前开发的功能又不想动时，可以把当前开发的功能用stash暂时挂起，然后新建一个分支来修复bug
    <div align="center">
    <img src="../图片/Git/stash命令图片1.png">
@@ -202,5 +202,5 @@ git config user.email
    <img src="../图片/Git/stash命令图片3.png">
    </div>
    
-### revert命令（轻易不要使用）
+### revert命令（轻易不要使用）  
    结合log命令，单独删除某个或几个节点的更改，该节点前后修改保留
