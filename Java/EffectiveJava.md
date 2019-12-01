@@ -6,7 +6,7 @@
        * [equals方法](#equals方法)
        * [hashcode方法](#hashcode方法)
        * [谨慎覆盖clone](#谨慎覆盖clone)
-       * [compareTo方法][#compareTo方法]
+       * [compareTo方法](#compareTo方法)
 
 ## 一、创建与销毁对象  
 
