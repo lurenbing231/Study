@@ -1,7 +1,7 @@
 # 《Spring Boot实战》
-   * [一、Spring基础](#一Spring基础)  
+   * [一、Spring基础](#一spring基础)  
      * [Spring的生态](#Spring的生态)  
-     * [项目构建工具Maven](#项目构建工具Maven)  
+     * [项目构建工具Maven](#项目构建工具maven)  
 
 ## 一、Spring基础
 <div align="center">
