@@ -6,7 +6,7 @@
        * [equals方法](#equals方法)
        * [hashcode方法](#hashcode方法)
        * [谨慎覆盖clone](#谨慎覆盖clone)
-       * [compareTo方法](#compareTo方法)
+       * [compareTo方法](#compareto方法)
 
 ## 一、创建与销毁对象  
 
@@ -146,8 +146,6 @@ hashmap有一项优化：会将每个项相关联的散列码缓存起来，如�
 clone方法就是另一个构造器，必须确保不会影响原始对象，并能确保正确地创建被克隆对象中的约束条件。
 
 例如：对象中包含的域包含了可变的对象，为了确保原始对象和克隆对象相互不受影响，可变对象也要递归地调用clone。
-
-
 
 ### compareTo方法
 
