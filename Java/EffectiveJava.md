@@ -179,7 +179,9 @@ clone方法就是另一个构造器，必须确保不会影响原始对象，并
 
 数组提供了运行时的类型安全，但是没有编译时的类型安全
 
-![列表优先于数组1](/Users/zhaoliang/github/Study/图片/Java/列表优先于数组1.png)
+<div align="center">
+ <img src="../picture/Java/列表优先于数组1.png">
+</div>
 
 任何情况下不能将String放到Long容器中，但是利用数组在运行时才能发现问题。
 

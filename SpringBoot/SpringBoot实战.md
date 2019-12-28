@@ -5,7 +5,7 @@
 
 ## 一、Spring基础
 <div align="center">
- <img src="../图片/SpringBoot/Spring模块图.jpg">
+ <img src="../picture/SpringBoot/Spring模块图.jpg">
 </div>
 
 ### Spring的生态
