@@ -33,10 +33,10 @@ git config user.name
 git config user.email
 ```
 <div align="center">
-<img src="../图片/Git/用户名图片.png">
+<img src="../picture/Git/用户名图片.png">
    </div>
    <div align="center">
-   <img src="../图片/Git/用户邮箱图片.png">
+   <img src="../picture/Git/用户邮箱图片.png">
    </div>
 
 ## 二、创建版本库及提交命令  
@@ -46,8 +46,9 @@ git config user.email
    git init
    ```
    <div align="center">
-   <img src="../图片/Git/创建版本库图片.png">
+   <img src="../picture/Git/创建版本库图片.png">
    </div>
+
    会发现文件后面会有master标记，说明此文件夹现在是Git仓库。
 
 ### Git的三个存储空间  
@@ -67,26 +68,30 @@ git config user.email
    ```
    当工作区文件修改后，文件状态为
    <div align="center">
-   <img src="../图片/Git/提交修改文件命令图片1.png">
+   <img src="../picture/Git/提交修改文件命令图片1.png">
    </div>
+
    当文件提交到暂存区后，文件状态为
    <div align="center">
-   <img src="../图片/Git/提交修改文件命令图片2.png">
+   <img src="../picture/Git/提交修改文件命令图片2.png">
    </div>
+
    文件提交到当前分支后，文件状态为
    <div align="center">
-   <img src="../图片/Git/提交修改文件命令图片3.png">
+   <img src="../picture/Git/提交修改文件命令图片3.png">
    </div>
 
 ### 版本回退  
    使用git log命令查看已经提交的版本
    <div align="center">
-   <img src="../图片/Git/版本回退图片1.png">
+   <img src="../picture/Git/版本回退图片1.png">
    </div>
+
    用git log --pretty=oneline可以查看的更清晰
    <div align="center">
-   <img src="../图片/Git/版本回退图片2.png">
+   <img src="../picture/Git/版本回退图片2.png">
    </div>
+
    其中，十六进制码为版本id，用于切换到指定版本。
 
    如果要回退到上一个版本，可以使用以下命令。
@@ -96,11 +101,12 @@ git config user.email
    ```
    可以看到，当前版本已经是上一个版本了
    <div align="center">
-   <img src="../图片/Git/版本回退图片3.png">
+   <img src="../picture/Git/版本回退图片3.png">
    </div>
    <div align="center">
-   <img src="../图片/Git/版本回退图片4.png">
+   <img src="../picture/Git/版本回退图片4.png">
    </div>
+
    如果还想回到第二次修改的版本，可以使用以下命令。
    ```
    git reset --hard [版本id]
@@ -112,18 +118,21 @@ git config user.email
 ### 撤销修改  
    该方法适合修改的文件还没提交到分支中的情况。
    如果修改的文件还在工作区，还没有提交到暂存区，即是以下状态
+
    <div align="center">
-   <img src="../图片/Git/撤销修改图片1.png">
+   <img src="../picture/Git/撤销修改图片1.png">
    </div>
+
    正如git的提示，使用以下命令撤销当前修改的内容
    <div align="center">
-   <img src="../图片/Git/撤销修改图片2.png">
+   <img src="../picture/Git/撤销修改图片2.png">
    </div>
 
    如果修改的内容提交到暂存区，如下图
    <div align="center">
-   <img src="../图片/Git/撤销修改图片3.png">
+   <img src="../picture/Git/撤销修改图片3.png">
    </div>
+
    可以用以下命令把暂存区的文件退回到工作区
    ```
    git reset HEAD [filename]
@@ -144,11 +153,12 @@ git config user.email
    ```
    其中星号表示当前所在的分支
    <div align="center">
-   <img src="../图片/Git/创建与合并图片1.png">
+   <img src="../picture/Git/创建与合并图片1.png">
    </div>
    <div align="center">
-   <img src="../图片/Git/创建与合并图片2.png">
+   <img src="../picture/Git/创建与合并图片2.png">
    </div>
+
    合并分支及删除分支
    ```
    git merge [name]     //把name分支合并到当前分支
@@ -161,26 +171,30 @@ git config user.email
 ### 解决冲突  
    首先dev从master拉出分支，dev和master都对文件进行了修改，这时把dev分支合并到master中，会出现冲突
    <div align="center">
-   <img src="../图片/Git/解决冲突图片1.png">
+   <img src="../picture/Git/解决冲突图片1.png">
    </div>
+
    使用git status命令可以查看冲突文件
    <div align="center">
-   <img src="../图片/Git/解决冲突图片2.png">
+   <img src="../picture/Git/解决冲突图片2.png">
    </div>
+
    进入文件可以看到以下冲突
    <div align="center">
-   <img src="../图片/Git/解决冲突图片3.png">
+   <img src="../picture/Git/解决冲突图片3.png">
    </div>
+
    进入文件解决冲突后再重新提交
    <div align="center">
-   <img src="../图片/Git/解决冲突图片4.png">
+   <img src="../picture/Git/解决冲突图片4.png">
    </div>
 
 ### stash命令  
    当出现一个紧急bug，当前开发的功能又不想动时，可以把当前开发的功能用stash暂时挂起，然后新建一个分支来修复bug
    <div align="center">
-   <img src="../图片/Git/stash命令图片1.png">
+   <img src="../picture/Git/stash命令图片1.png">
    </div>
+
    使用以下命令，可以看现在暂时挂起的版本
 
    ```
@@ -188,8 +202,9 @@ git config user.email
    ```
 
    <div align="center">
-   <img src="../图片/Git/stash命令图片2.png">
+   <img src="../picture/Git/stash命令图片2.png">
    </div>
+
    然后用以下命令还原挂起的版本
 
    ```
