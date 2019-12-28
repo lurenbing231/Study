@@ -112,7 +112,7 @@ git config user.email
    git reset --hard [版本id]
    ```
    <div align="center">
-   <img src="../图片/Git/版本回退图片5.png">
+   <img src="../picture/Git/版本回退图片5.png">
    </div>
 
 ### 撤销修改  
@@ -138,8 +138,9 @@ git config user.email
    git reset HEAD [filename]
    ```
    <div align="center">
-   <img src="../图片/Git/撤销修改图片4.png">
+   <img src="../picture/Git/撤销修改图片4.png">
    </div>
+
    如果文件被提交到分支上（commit了），就要用版本回退了
 
 ## 三、分支管理  
@@ -165,7 +166,7 @@ git config user.email
    git branch -d [name] //删除name分支
    ```
    <div align="center">
-   <img src="../图片/Git/创建与合并图片3.png">
+   <img src="../picture/Git/创建与合并图片3.png">
    </div>
 
 ### 解决冲突  
@@ -214,7 +215,7 @@ git config user.email
    git stash apply stash@{0}  //指定id为0的版本恢复
    ```
    <div align="center">
-   <img src="../图片/Git/stash命令图片3.png">
+   <img src="../picture/Git/stash命令图片3.png">
    </div>
 
 ### revert命令（轻易不要使用）  
