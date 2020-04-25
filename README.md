@@ -15,7 +15,7 @@
 《tcp/ip详解，卷一：协议》
 《算法导论》
 
-| [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) |
+| [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) | [Redis](#Redis)
 
 ## JAVA
 #### [编程思想](Java/编程思想.md)  
@@ -26,10 +26,15 @@
    工作中遇到的问题总结
 
 ## [Git](Git/Git.md)  
-
    入职之后的学习和总结（持续更新中）。
 
 ## Spring Boot 
 #### [SpringBoot实战](SpringBoot/SpringBoot实战.md)  
    根据《spring Boot 实战》阅读总结
+   
+## Redis
+#### [Redis数据类型]
+##### [string数据类型](Redis/string数据类型.md)
+##### [sds数据结构](Redis/sds数据结构.md)
+##### [dict数据结构](Redis/dict数据结构.md)
 
