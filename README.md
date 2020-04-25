@@ -33,7 +33,7 @@
    根据《spring Boot 实战》阅读总结
    
 ## Redis
-#### [Redis数据类型]
+#### Redis数据类型
 ##### [string数据类型](Redis/string数据类型.md)
 ##### [sds数据结构](Redis/sds数据结构.md)
 ##### [dict数据结构](Redis/dict数据结构.md)
