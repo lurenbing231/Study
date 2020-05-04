@@ -33,8 +33,19 @@
    根据《spring Boot 实战》阅读总结
    
 ## Redis
+##### [基础](Redis/基础知识.md)
+##### [持久化机制](Redis/持久化机制.md)
+##### [redis分布式](Redis/redis分布式.md)
 #### Redis数据类型
-##### [string数据类型](Redis/string数据类型.md)
-##### [sds数据结构](Redis/sds数据结构.md)
-##### [dict数据结构](Redis/dict数据结构.md)
+##### [string](Redis/string数据类型.md)
+##### [sorted set](Redis/sortedset数据类型.md)
+##### [set](Redis/set数据类型.md)
+#### Ridis底层数据结构
+##### [sds](Redis/sds数据结构.md)
+##### [dict](Redis/dict数据结构.md)
+##### [robj](Redis/robj数据结构.md)
+##### [ziplist](Redis/ziplist数据结构.md)
+##### [quicklist](Redis/quicklist数据结构.md)
+##### [intset](Redis/intset数据结构.md)
+##### [skiplist](Redis/skiplist数据结构.md)
 
