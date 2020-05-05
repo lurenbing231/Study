@@ -15,23 +15,19 @@
 《tcp/ip详解，卷一：协议》
 《算法导论》
 
-| [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) | [Redis](#Redis)
+| [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) | [Redis](#Redis)| [zookeeper](#zookeeper)
 
 ## JAVA
 #### [编程思想](Java/编程思想.md)  
    根据《JAVA编程思想》（中文第四版）自己阅读总结。
 #### [Effective Java](Java/EffectiveJava.md)
-
 #### [问题总结](Java/working.md)  
    工作中遇到的问题总结
-
 ## [Git](Git/Git.md)  
    入职之后的学习和总结（持续更新中）。
-
 ## Spring Boot 
 #### [SpringBoot实战](SpringBoot/SpringBoot实战.md)  
    根据《spring Boot 实战》阅读总结
-   
 ## Redis
 ##### [基础](Redis/基础知识.md)
 ##### [持久化机制](Redis/持久化机制.md)
@@ -48,4 +44,5 @@
 ##### [quicklist](Redis/quicklist数据结构.md)
 ##### [intset](Redis/intset数据结构.md)
 ##### [skiplist](Redis/skiplist数据结构.md)
-
+## zookeeper
+#### [基础知识](zookeeper/基础知识.md)
