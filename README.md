@@ -1,19 +1,7 @@
  
 # 个人学习
 
-《深入分析Java Web技术内幕》
-《java编程思想
-《java核心技术：卷一卷二》
-《java并发编程实战》
-《编程之美》,《剑指offer》
-《深入理解jvm虚拟机》
-《Spring技术内幕》
-《大型网站技术架构》
-《java设计模式》
-《java分布式应用：基础与实践》
-《how tomcat works》
-《tcp/ip详解，卷一：协议》
-《算法导论》
+|《深入分析Java Web技术内幕》|《java编程思想》|《java核心技术：卷一卷二》|《java并发编程实战》|《编程之美》|《剑指offer》|《深入理解jvm虚拟机》|《Spring技术内幕》|《大型网站技术架构》|《java设计模式》|《java分布式应用：基础与实践》|《how tomcat works》|《tcp/ip详解，卷一：协议》|《算法导论》|《redis实战》
 
 | [JAVA](#JAVA) | [Git](#Git) | [SpringBoot](#SpringBoot) | [Redis](#Redis)| [zookeeper](#zookeeper)|[dubbo](#dubbo)|[MyBatis](#MyBatis)
 
